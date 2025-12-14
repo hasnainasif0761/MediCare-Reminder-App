@@ -43,14 +43,21 @@ function medicineReminder() {
     var period = hours >= 12 ? 'PM' : 'AM';
 
     console.log("Today is: " + today);
-    console.log("Current Time:",hour2+":"+minute+" "+period);
+    console.log("Current Time:", hour2 + ":" + minute + " " + period);
     console.log("-------------------------------------=");
 
     var medicineFound = false;
 
-    for(var i = 0; i < medicine.length; i++) {
-
-}
+    for (var i = 0; i < medicine.length; i++) {
+        if (
+            medicine[i].hour === hour2 &&
+            medicine[i].minte === minute &&
+            medicine[i].period === period
+        ) {
+            console.log("Medicine Reminder");
+            
+        }
+    }
 // medicineReminder();
 
 
