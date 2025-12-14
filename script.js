@@ -44,9 +44,14 @@ function medicineReminder() {
 
     console.log("Today is: " + today);
     console.log("Current Time:",hour2+":"+minute+" "+period);
-    
+    console.log("-------------------------------------=");
+
+    var medicineFound = false;
+
+    for(var i = 0; i < medicine.length; i++) {
+
 }
-medicineReminder();
+// medicineReminder();
 
 
 
