@@ -32,10 +32,11 @@ function medicineReminder() {
 
     // Gt Current day
     var today = days[date.getDay()];
+
+    // Get 24 hourse Time
     
 
 }
-
 
 
 
