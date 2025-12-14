@@ -41,7 +41,12 @@ function medicineReminder() {
     // Convert 24 hourse to 12 hourse formate
     var hour2 = hours % 12 || 12;
     var period = hours >= 12 ? 'PM' : 'AM';
+
+    console.log("Today is: " + today);
+    console.log("Current Time:",hour2+":"+minute+" "+period);
+    
 }
+medicineReminder();
 
 
 
