@@ -4,28 +4,41 @@ var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'S
 
 var medicine = [
     {
-        name : 'Aspirin',
-        quantity : "2 tablets",
-        hour : 9,
-        minte : 0,
-        period : 'AM',
+        name: 'Aspirin',
+        quantity: "2 tablets",
+        hour: 9,
+        minte: 0,
+        period: 'AM',
     },
     {
-        name : 'Panadol',
-        quantity : "1 tablet",
-        hour : 2,
-        minte : 30,
-        period : 'PM',
+        name: 'Panadol',
+        quantity: "1 tablet",
+        hour: 2,
+        minte: 30,
+        period: 'PM',
     },
     {
-        name : 'Disprin',
-        quantity : "1 tablet",
-        hour : 8,
-        minte : 15,
-        period : 'AM',
+        name: 'Disprin',
+        quantity: "1 tablet",
+        hour: 8,
+        minte: 15,
+        period: 'AM',
     }
 
-]
+];
+
+function medicineReminder() {
+    var date = new Date();
+
+    // Gt Current day
+    var today = days[date.getDay()];
+    
+
+}
+
+
+
+
 
 
 
