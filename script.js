@@ -34,8 +34,13 @@ function medicineReminder() {
     var today = days[date.getDay()];
 
     // Get 24 hourse Time
-    
+    var hours = date.getHours();
+    var minute = date.getMinutes();
 
+
+    // Convert 24 hourse to 12 hourse formate
+    var hour2 = hours % 12 || 12;
+    var period = hours >= 12 ? 'PM' : 'AM';
 }
 
 
