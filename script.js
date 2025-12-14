@@ -6,9 +6,9 @@ var medicine = [
     {
         name: 'Aspirin',
         quantity: "2 tablets",
-        hour: 9,
-        minte: 0,
-        period: 'AM',
+        hour: 7,
+        minte: 12,
+        period: 'PM',
     },
     {
         name: 'Panadol',
@@ -27,6 +27,8 @@ var medicine = [
 
 ];
 
+
+
 function medicineReminder() {
     var date = new Date();
 
@@ -44,7 +46,7 @@ function medicineReminder() {
 
     console.log("Today is: " + today);
     console.log("Current Time:", hour2 + ":" + minute + " " + period);
-    console.log("-------------------------------------=");
+    console.log("-------------------------------------  ");
 
     var medicineFound = false;
 
@@ -55,12 +57,21 @@ function medicineReminder() {
             medicine[i].period === period
         ) {
             console.log("Medicine Reminder");
-            
+            console.log("Medicine :",medicine[i].name);
+            console.log("Quantity :",medicine[i].quantity);
+            console.log("Time :",medicine[i].hour + ":" + medicine[i].minte + " " + medicine[i].period);
+            medicineFound = true;
+        }
+
+        if(!medicineFound){
+            console.log("Abhe Koi medicine nahe hai. Allah sehat de");
+            break 
         }
     }
-// medicineReminder();
 
+}
 
+medicineReminder()
 
 
 
